@@ -1,0 +1,234 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+body {
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	background: url(./images/bg-desktop.png);
+	background-repeat: no-repeat;
+	background-color: hsl(229, 57%, 11%);
+	background-position: left bottom;
+position: relative;
+}
+.containers {
+	margin-top: 15%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.container1 {
+	display: flex;
+	width: 300px;
+	height: 125px;
+	padding: 30px;
+	background-color: hsl(228, 56%, 26%);
+	border-radius: 7px;
+	border-top-right-radius: 80px;
+	margin-left: 15%;
+}
+.logo {
+	color:  #fff;
+}
+.various-icons {
+	display: flex;
+	align-items: flex-start;
+	padding-top: 30px;
+}
+.document-icon,
+.folder-icon,
+.upload-icon {
+	background-color: hsl(229, 57%, 11%);
+	width: 30px;
+	height: 25px;
+	padding: 10px;
+}
+.folder-icon,
+	.upload-icon {
+		margin-left: 20px;
+	}
+.container2 {
+	width: 35%;
+	height: 80px;
+	margin-top: 45px;
+	padding: 30px;
+	border-radius: 7px;
+	background-color: hsl(228, 56%, 26%);
+	margin-right: 16%;
+}
+.used-paragraph {
+	color: hsl(229, 7%, 55%) ;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+em {
+	color: #fff;
+}
+
+/*******TOOLTIP*******/
+.tooltip {
+  position: relative;
+}
+ .tooltip .tooltiptext {
+  	visibility: visible;
+  	width: 162px;
+  	background-color: #fff;
+  	text-align: center;
+  	border-radius: 6px;
+  	padding: 10px 0;
+  	position: absolute;
+  	z-index: 1;
+  	bottom: 125%;
+  	margin-left: -55px;
+  	opacity: 0;
+  	transition: opacity 0.3s;
+  	margin-bottom: 45px;
+}
+.tooltiptext::after {
+  	content: "";
+  	position: absolute;
+  	top: 90%;
+  	left: 81.5%;
+ 		margin-left: -5px;
+  	border-width: 15px;
+  	border-style: solid;
+  	border-color: #fff #fff transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  	visibility: visible;
+  	opacity: 1;
+}
+.slider {
+		opacity: 1;
+		width: 80%;
+		height: 14px;
+}
+.slider-content {
+		width: 80%;
+}
+#myProgress {
+	  width: 100%;
+  	background-color: hsl(229, 57%, 11%);
+  	border-radius: 10px;
+		position: relative;
+}
+#myBar {
+	  width: 80%;
+  	height: 14px;
+  	background-image:  linear-gradient(
+  	to right, hsl(6, 100%, 80%),
+   	hsl(335, 100%, 65%));
+  	border-top-right-radius: 5px;
+  	border-bottom-right-radius: 5px;
+  	border-top-left-radius: 5px;
+  	border-bottom-left-radius: 5px;
+  	z-index: 1;
+  	position: relative;
+}
+.slider {
+	  border-radius: 30px;
+}
+.round {
+		border-radius: 50px;
+}
+.slider.round:before {
+  	border-radius: 50%;
+  	background-color: red;
+}
+label {
+		border-radius: 50%;
+		background-color: white;
+		margin-left: 96%;
+		cursor: pointer;
+		width: 11px;
+		height: 12px;
+		display: inline-block;
+		position: absolute;
+}
+.zero-gb,
+.thousand-gb {
+		color: #fff;
+		display: flex;
+		align-items: flex-start;
+		padding-top: 10px;
+}
+.zero-gb {
+		float: left;
+}
+.thousand-gb {
+		float: right;
+}
+.pop-up-mobile {
+	display: none;
+	background-color: #fff;
+	width: 180px;
+	height: 50px;
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 40px;
+}
+.total-left {
+	font-size: 40px;
+	color: #000;
+	padding-right: 10px;
+	font-weight: bold;
+}
+.gb-left {
+	font-size: 12px;
+}
+.attribution { 
+	font-size: 11px;
+	text-align: center; 
+	margin-top: 22%;
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%);
+}
+ 
+@media only screen and (max-width:  600px){
+	body {
+		width: 375px;
+		background: bottom left url(./images/bg-mobile.png);
+		background-size: cover;
+	}
+	.containers {
+		flex-direction: column;
+	}
+	.container1 {
+		margin-top: 20%;
+		margin-left: 5%;
+	}
+	.pop-up-mobile {
+		display: block;
+	}
+	.container2 {
+		width: 80%;
+		margin-left: 5%;
+		margin-right: 10%;
+		margin-top: 20px;
+		padding-bottom: 50px;
+		margin-right: 1px;
+	}
+	.used-paragraph {
+		text-align: center;
+	}
+	.tooltip {
+		margin-left: 1px;
+		cursor: none;
+	}
+	.tooltip:hover .tooltiptext {
+  	visibility: hidden;
+  	opacity: 0;
+	}
+	label {
+		margin-left: 94.5%;
+	}
+	.attribution {
+		margin-top: 35%;
+	}
+}

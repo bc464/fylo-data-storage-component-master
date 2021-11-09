@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="containers">
+      <section class="container1">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo image">
+        <div class="various-icons">
+          <a href="#" aria-label="link to documents">
+            <img class="document-icon" src="./images/icon-document.svg" alt="document icon"></a>
+          <a href="#" aira-label="link to folder">
+            <img class="folder-icon" src="./images/icon-folder.svg" alt="folder icon"></a>
+          <a href="#" aria-label="link to upload">
+            <img class="upload-icon" src="./images/icon-upload.svg" alt="upload icon"></a>
+          </div>
+        </div>
+      </section>
+      <section class="container2">
+        <p class="used-paragraph">You’ve used<em> 815 GB</em> of your storage</p>
+        <div id="myProgress">
+          <div id="myBar">
+            <label>
+              <span class="slider round">
+                <div class="tooltip">.
+                  <p class="gb-left tooltiptext"><em class="total-left">185</em> GB Left</p>
+                </div>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div>
+          <span class="zero-gb">0 GB</span>
+          <span class="thousand-gb">1000 GB</span>
+        </div>
+        <div class="pop-up-mobile">
+          <p class="gb-left"><em class="total-left">185</em> GB Left</p>
+        </div>
+      </section>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" aria-label="link to frontendmentor">Frontend Mentor</a>. 
+      Coded by <a href="#">brian</a>.
+    </div>
+  </body>
+</html>
